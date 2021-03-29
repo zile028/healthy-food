@@ -4,12 +4,6 @@
 // global
 button {
     @include btn($orange, $green);
-    margin-top: 20px;
-    letter-spacing: 3px;
-    color: $black;
-    font-weight: 600;
-    font-size: 0.8rem;
-    padding: 15px 35px;
 }
 
 // navigation
@@ -145,6 +139,32 @@ nav {
     background-color: rgba($gray, 0.85);
     background-image: linear-gradient(rgba($white, 0.15), rgba($white, 0.15)), url(../img/bg2.jpg);
     @include bgBasic(center top, 100% 60%);
+}
+
+// proizvodnja
+.proizvodnja {
+    background-color: rgba($orange, 0.85);
+    @include flex(space-between, stretch);
+    article {
+        @include flex(center, center, column);
+        flex: 1;
+        text-align: center;
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+        h2 {
+            font-size: 3rem;
+            font-weight: 800;
+        }
+        p {
+            color: $white;
+            font-weight: 600;
+        }
+        button {
+            @include btn($white, $green);
+        }
+    }
 }
 
 // footer

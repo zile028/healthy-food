@@ -47,21 +47,19 @@ img {
 
 button {
   font-family: "Open Sans", sans-serif;
-  padding: 15px 40px;
-  color: #fff;
   background-color: #f8a055;
   text-transform: uppercase;
   border: none;
   font-size: 0.9rem;
-  cursor: pointer;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
   margin-top: 20px;
   letter-spacing: 3px;
   color: #221f1a;
   font-weight: 600;
   font-size: 0.8rem;
   padding: 15px 35px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 button:hover {
@@ -300,6 +298,84 @@ nav ul li a {
   background-position: center top;
   background-size: 100% 60%;
   background-repeat: no-repeat;
+}
+
+.proizvodnja {
+  background-color: rgba(248, 160, 85, 0.85);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.proizvodnja article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+
+.proizvodnja article img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+.proizvodnja article h2 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.proizvodnja article p {
+  color: #fff;
+  font-weight: 600;
+}
+
+.proizvodnja article button {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  color: #221f1a;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 15px 35px;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.proizvodnja article button:hover {
+  background-color: #988d51;
 }
 
 footer {
