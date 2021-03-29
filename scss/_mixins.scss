@@ -12,6 +12,7 @@
   background-repeat: no-repeat;
 }
 @mixin btn($bgColor, $bgHover) {
+  font-family: $fontFamily;
   padding: 15px 40px;
   color: $white;
   background-color: $bgColor;

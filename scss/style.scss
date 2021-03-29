@@ -5,9 +5,11 @@
 button {
     @include btn($orange, $green);
     margin-top: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: $black;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 15px 35px;
 }
 
 // navigation
@@ -65,7 +67,7 @@ nav {
         h1 {
             color: rgba($orange, 1);
             text-shadow: $textShadow;
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
         h4 {
             color: $black;
@@ -75,6 +77,17 @@ nav {
     }
 }
 
+// otherHeader
+.otherHeader {
+    @extend .indexHeader;
+    background-image: linear-gradient(to right, rgba($white, 0.99), rgba($white, 0.1)), url(../img/header2.jpg);
+    height: 50vh;
+    hgroup {
+        width: 50%;
+        padding: 0px;
+        background: none;
+    }
+}
 // about
 .about {
     @include flex(space-between, stretch);
@@ -102,6 +115,36 @@ nav {
             margin-bottom: 30px;
         }
     }
+}
+
+// green
+.green {
+    padding: $padding;
+    background-image: linear-gradient(rgba($white, 0.15), rgba($white, 0.15)), url(../img/bg.jpg);
+    @include bgBasic;
+    .container {
+        @include flex(space-between, center);
+        div {
+            flex: 0 0 45%;
+            p {
+                color: $white;
+                font-weight: 600;
+                margin-top: 40px;
+            }
+            h2 {
+                font-size: 3rem;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+// organic
+.organic {
+    @extend .green;
+    background-color: rgba($gray, 0.85);
+    background-image: linear-gradient(rgba($white, 0.15), rgba($white, 0.15)), url(../img/bg2.jpg);
+    @include bgBasic(center top, 100% 60%);
 }
 
 // footer

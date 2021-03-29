@@ -46,6 +46,7 @@ img {
 }
 
 button {
+  font-family: "Open Sans", sans-serif;
   padding: 15px 40px;
   color: #fff;
   background-color: #f8a055;
@@ -56,9 +57,11 @@ button {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   margin-top: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #221f1a;
-  font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 15px 35px;
 }
 
 button:hover {
@@ -138,7 +141,7 @@ nav ul li a {
   height: 100%;
 }
 
-.indexHeader {
+.indexHeader, .otherHeader {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.99)), to(rgba(255, 255, 255, 0.1))), url(../img/header.jpg);
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.1)), url(../img/header.jpg);
   background-position: center;
@@ -147,7 +150,7 @@ nav ul li a {
   height: 80vh;
 }
 
-.indexHeader .container {
+.indexHeader .container, .otherHeader .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,23 +169,35 @@ nav ul li a {
   height: 100%;
 }
 
-.indexHeader hgroup {
+.indexHeader hgroup, .otherHeader hgroup {
   width: 50%;
   padding: 50px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.8)));
   background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.8));
 }
 
-.indexHeader hgroup h1 {
+.indexHeader hgroup h1, .otherHeader hgroup h1 {
   color: #f8a055;
   text-shadow: 0 0 2px #221f1a;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
-.indexHeader hgroup h4 {
+.indexHeader hgroup h4, .otherHeader hgroup h4 {
   color: #221f1a;
   font-weight: 400;
   font-size: 1rem;
+}
+
+.otherHeader {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.99)), to(rgba(255, 255, 255, 0.1))), url(../img/header2.jpg);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.1)), url(../img/header2.jpg);
+  height: 50vh;
+}
+
+.otherHeader hgroup {
+  width: 50%;
+  padding: 0px;
+  background: none;
 }
 
 .about {
@@ -232,6 +247,59 @@ nav ul li a {
   font-weight: 800;
   font-size: 1.5rem;
   margin-bottom: 30px;
+}
+
+.green, .organic {
+  padding: 70px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.15))), url(../img/bg.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.green .container, .organic .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.green .container div, .organic .container div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45%;
+          flex: 0 0 45%;
+}
+
+.green .container div p, .organic .container div p {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.green .container div h2, .organic .container div h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.organic {
+  background-color: rgba(90, 87, 78, 0.85);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(255, 255, 255, 0.15))), url(../img/bg2.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(../img/bg2.jpg);
+  background-position: center top;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
 }
 
 footer {
