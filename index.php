@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include 'partials/navigation.php' ?>
+<!-- header -->
+<header class="indexHeader">
+    <article class="container">
+        <hgroup>
+            <h1>Odaberite zdravlje</h1>
+            <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, quidem corporis? Minima maxime sed in
+                molestias! Laborum assumenda eaque libero.</h4>
+            <button>procitaj vise</button>
+        </hgroup>
+    </article>
+</header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>6 - Healthy Food</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-</body>
-
-</html>
+<?php include 'partials/footer.php' ?>
