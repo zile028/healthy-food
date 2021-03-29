@@ -27,7 +27,7 @@
   padding: 15px 35px;
 
   cursor: pointer;
-  transition: $transition;
+  transition: background-color $transition;
   &:hover {
     background-color: $bgHover;
   }
