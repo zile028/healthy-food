@@ -185,6 +185,55 @@ nav ul li a {
   font-size: 1rem;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 100px 0;
+}
+
+.about article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+.about article h2 {
+  color: #221f1a;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.about article h2 span {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.about article h3 {
+  color: #f8a055;
+  text-shadow: 0 0 2px #221f1a;
+  font-size: 5rem;
+}
+
+.about article h4 {
+  color: #221f1a;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
